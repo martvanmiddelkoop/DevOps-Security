@@ -60,4 +60,4 @@ jobs:
               sudo kubectl apply -f ${{ github.workspace }}/kubernetes/deployment.yaml --force
               sudo kubectl apply -f ${{ github.workspace }}/kubernetes/nginx-service.yaml --force
               sudo k3s kubectl rollout restart deployment student-devsecops
-              sudo k3s kubectl rollout status deployment/student-devsecops --timeout=120s
+              sudo k3s kubectl rollout status deployment/student-devsecops --timeout=30s
